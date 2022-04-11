@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DailyToDo</string>
+    <string name="title">Daily To Do List:</string>
+    <string name="description">List your to-do list below.</string>
+    <string name="task_hint">Enter to do tasks here.</string>
+    <string name="delete_btn">×</string>
+</resources>
