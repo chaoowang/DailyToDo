@@ -30,5 +30,13 @@
             android:id="@+id/list"
             android:orientation="vertical"/>
     </ScrollView>
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_btn"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#DADADA"/>
 
 </LinearLayout>
