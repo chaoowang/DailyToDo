@@ -5,4 +5,8 @@
     <string name="task_hint">Enter to do tasks here.</string>
     <string name="delete_btn">×</string>
     <string name="add_btn">Add New Task</string>
+    <string name="settings_btn">Settings</string>
+    <string name="bright_theme">Bright Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="choose_you_theme">Choose you theme.</string>
 </resources>

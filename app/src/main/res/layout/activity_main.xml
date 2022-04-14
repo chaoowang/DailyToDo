@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_margin="20dp">
+    android:padding="20dp">
     <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title"
@@ -13,28 +15,40 @@
         android:textColor="@color/black"
         android:layout_margin="5dp"/>
     <TextView
+        android:id="@+id/hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/description"
         android:textSize="12sp"
         android:textColor="#29282B"
         android:layout_margin="5dp"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="5dp"
         android:layout_weight="1"
-        android:layout_marginTop="5dp">
+        tools:ignore="SpeakableTextPresentCheck">
+
         <TableLayout
+            android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/list"
-            android:orientation="vertical"/>
+            android:orientation="vertical" />
     </ScrollView>
     <Button
         android:id="@+id/add_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add_btn"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#DADADA"/>
+    <Button
+        android:id="@+id/settings_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_btn"
         android:textSize="12sp"
         android:textColor="@color/black"
         android:backgroundTint="#DADADA"/>
