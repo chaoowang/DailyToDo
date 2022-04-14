@@ -38,5 +38,4 @@
         android:textSize="12sp"
         android:textColor="@color/black"
         android:backgroundTint="#DADADA"/>
-
 </LinearLayout>

@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button add_btn = findViewById(R.id.add_btn);
         add_btn.setOnClickListener(v -> addTask(add_btn));
-        Button delete_btn = findViewById(R.id.delete_btn);
-        delete_btn.setOnClickListener(view -> deleteTask(delete_btn));
+
     }
 
     private void addTasks(boolean checked, String description) {
@@ -40,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
         checkBox.setChecked(checked);
         task_description.setText(description);
+
+        Button delete_btn = task.findViewById(R.id.delete_btn);
+        delete_btn.setOnClickListener(v -> deleteTask(delete_btn));
     }
 
     public void addTask(View view) {
